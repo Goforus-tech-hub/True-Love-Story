@@ -1,0 +1,211 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: blue;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 5px;
+  }
+  
+  nav {
+    background-color: orangered;
+    color: white;
+    padding: 2px;
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+  }
+  
+  nav ul.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul.menu li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  nav ul.menu li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     }
+  
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+    color: white;
+  }
+  
+  .main-content {
+    padding: 10px;
+     }
+  
+  .love-story-content{
+    border: 2px solid auto;
+    margin-left: 10px;
+    margin-right: 10px;
+   position: center;
+   font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .love-story h2,
+  .love-song-lyrics h2,
+  .romantic-movies-scripts h2,
+  .images-section h2,
+  .youtube-container h2 {
+    color: orange;
+  }
+  
+  .youtube-container {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+     margin: auto;
+     position: relative;
+     
+     
+  }
+  
+  .youtube-link-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .images-section {
+    background-color: maroon;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .sliding-images {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    animation: sliding-images 18s infinite linear;
+  }
+  
+  .sliding-images img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  @keyframes sliding-images {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  footer {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Mobile Responsive Styles */
+  @media screen and (max-width: 768px) {
+    nav ul.menu {
+      display: none;
+    }
+  
+    nav ul.menu.show-menu {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  }
+  
+  /* ... (previous code) ... */
+
+.read-more-button {
+    display: block;
+    margin: 10px auto;
+    padding: 5px 10px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Add this CSS to center all headers */
+.content-container h2 {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+
+  /* ... (remaining code) ... */
+  
+  /* Your existing CSS styles */
+.content-container {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: initial;
+  font-size: large;
+ 
+  margin-left: 10px;
+}
+
+.love-story {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: initial;
+  font-size: larger;
+
+  margin-left: 10px;
+}
+
+
+.love-story-content p {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: initial;
+  font-size: larger;
+
+  margin-left: 10px;
+}
+
+.love-song-lyrics {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: initial;
+  font-size: larger;
+  margin-left: 10px;
+}
+
+
+.romantic-movies-scripts {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: initial;
+  font-size: larger;
+  margin-left: 10px;
+}
+
