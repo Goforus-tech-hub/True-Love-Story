@@ -1,0 +1,212 @@
+body {
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.cartoon-container {
+    position: relative;
+}
+
+.star {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: #FFD700;
+    border-radius: 50%;
+}
+
+.cartoon {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation: bounce 2s infinite;
+}
+
+.eyes {
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center;
+    color: #00f;
+    animation: blink 1s infinite;
+}
+
+.mouth {
+    font-size: 18px;
+    text-align: center;
+    color: #f00;
+}
+
+.person {
+    width: 40px;
+    height: 70px;
+    background-color: #00f;
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    border-radius: 10px;
+    animation: movePerson 2s infinite alternate;
+}
+
+.head {
+    width: 30px;
+    height: 30px;
+    background-color: #ff00ff;
+    position: absolute;
+    top: -20px;
+    left: 5px;
+    border-radius: 50%;
+}
+
+.body {
+    width: 20px;
+    height: 40px;
+    background-color: #00f;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 5px;
+}
+
+.kiss {
+    width: 40px;
+    height: 40px;
+    background-color: #f00;
+    position: absolute;
+    bottom: 40px;
+    left: 70px;
+    border-radius: 50%;
+    transform-origin: bottom;
+    animation: kissAnimation 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes blink {
+    0%, 100% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(0);
+    }
+}
+
+@keyframes movePerson {
+    0% {
+        left: 30px;
+    }
+    100% {
+        left: 50px;
+    }
+}
+
+@keyframes kissAnimation {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.8);
+    }
+}
+
+/* Existing styles for the cartoon */
+/* ... */
+
+.hearts {
+    position: absolute;
+    bottom: 90px;
+    left: 40px;
+    width: 0;
+    height: 0;
+}
+
+.heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #f00;
+    transform-origin: center;
+    animation: heartAnimation 1s infinite;
+}
+
+@keyframes heartAnimation {
+    0%, 100% {
+        transform: scale(1) rotate(0);
+    }
+    50% {
+        transform: scale(1.2) rotate(45deg);
+    }
+}
+
+@keyframes heartsAnimation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+
+/* Existing styles for the cartoon */
+/* ... */
+
+.scene {
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(#33ccff, #0066cc);
+}
+
+.speech-bubble {
+    position: absolute;
+    top: 50px;
+    left: 120px;
+    width: 110px;
+    color: white;
+    height: 160px;
+    background-color: auto;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 5px red;
+    animation: fadeIn 1s ease-in-out;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.speech-bubble p {
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
