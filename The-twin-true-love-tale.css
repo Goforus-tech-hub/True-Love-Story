@@ -97,6 +97,7 @@ body {
   .images-section {
     background-color: maroon;
     color: white;
+         border-radius: 26px;
     text-align: center;
     padding: 20px;
   }
@@ -110,7 +111,7 @@ body {
   
   .sliding-images img {
     width: 300px;
-     border-radius: 16px;
+     border-radius: 18px;
     height: auto;
     object-fit: cover;
   }
