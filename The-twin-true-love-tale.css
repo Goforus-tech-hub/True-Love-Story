@@ -105,7 +105,7 @@ body {
     display: flex;
     overflow: hidden;
     justify-content: space-between;
-    animation: sliding-images 18s infinite linear;
+    animation: sliding-images 28s infinite linear;
   }
   
   .sliding-images img {
