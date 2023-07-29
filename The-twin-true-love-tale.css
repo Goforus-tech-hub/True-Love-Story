@@ -110,6 +110,7 @@ body {
   
   .sliding-images img {
     width: 300px;
+     border-radius: 16px;
     height: auto;
     object-fit: cover;
   }
