@@ -17,6 +17,25 @@ header {
      border-radius: 16px;
 }
 
+        /* Music icon styles */
+        .music-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .music-icons img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .music-icons .current-music {
+            color: yellow;
+            animation: slideName 10s infinite;
+        }
+
+
 h1 {
     margin: 0;
 }
