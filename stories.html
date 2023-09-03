@@ -12,12 +12,21 @@
     <header>
         <h1 style="color: #fff;">Chapter 1: The Beginning</h1>
     </header>
+<style>
+    .music-container {
+        text-align: center;
+        margin: 0 auto;
+        width: 80%; /* Adjust the width as needed */
+    }
+</style>
 
-<div class="music-icons">
-    <img src="https://goforusschools.com/wp-content/uploads/2023/07/OIP-2.jpeg" alt="Music Icon 2" onclick="playMusic('Gloria & Lordzeck love story.mp3')">
+<div class="music-container">
+    <div class="music-icons">
+        <img src="https://goforusschools.com/wp-content/uploads/2023/07/OIP-2.jpeg" alt="Music Icon 2" onclick="playMusic('Gloria & Lordzeck love story.mp3')">
+    </div>
+    <audio id="audio-player" controls></audio>
+    <div id="current-music-name">No Music Playing</div>
 </div>
-<audio id="audio-player" controls></audio>
-<div id="current-music-name">No Music Playing</div>
 
 <script>
     function playMusic(filename) {
