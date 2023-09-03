@@ -123,6 +123,7 @@ iframe {
   width: 300px;
   height:100%;
   object-fit: cover;
+  border-radius: 26px;
 }
 
 @keyframes sliding-images {
