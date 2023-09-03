@@ -19,11 +19,7 @@
         width: 80%; /* Adjust the width as needed */
     }
 </style>
-
-<div class="music-container">
-    <div class="music-icons">
-        <img src="https://goforusschools.com/wp-content/uploads/2023/07/OIP-2.jpeg" alt="Music Icon 2" onclick="playMusic('Gloria & Lordzeck love story.mp3')">
-    </div>
+<div class="music-container" onclick="playMusic('Gloria & Lordzeck love story.mp3')">
     <audio id="audio-player" controls></audio>
     <div id="current-music-name">No Music Playing</div>
 </div>
@@ -43,6 +39,7 @@
         audioPlayer.play();
     }
 </script>
+
 
     <!-- Privacy Policy -->
     <section class="privacy-section">
