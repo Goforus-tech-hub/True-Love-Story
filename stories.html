@@ -21,7 +21,7 @@
 </style>
 <div class="music-container" onclick="playMusic('Gloria & Lordzeck love story.mp3')">
     <audio id="audio-player" controls></audio>
-    <div id="current-music-name">No Music Playing</div>
+    <div id="current-music-name">Tap here to listen</div>
 </div>
 
 <script>
@@ -33,7 +33,7 @@
         audioPlayer.src = filename;
 
         // Update the current music name
-        currentMusicName.textContent = "Tap here to listen: " + filename;
+        currentMusicName.textContent = "No music playing: " + filename;
 
         // Play the audio
         audioPlayer.play();
