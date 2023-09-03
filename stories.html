@@ -17,12 +17,47 @@
         text-align: center;
         margin: 0 auto;
         width: 80%; /* Adjust the width as needed */
+          .music-container {
+        cursor: pointer; /* Add cursor pointer */
+        position: relative; /* Create a stacking context for the signal element */
+    }
+
+    .music-container:hover::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 20px;
+        background-color: #007bff; /* Change the color of the signal */
+        border-radius: 50%;
+        opacity: 0.7; /* Adjust the signal's opacity */
+        animation: pulse 1s infinite; /* Add a pulsating animation */
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: translate(-50%, -50%) scale(0.8);
+            opacity: 0.7;
+        }
+        50% {
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 0.3;
+        }
+        100% {
+            transform: translate(-50%, -50%) scale(0.8);
+            opacity: 0.7;
+        }
+    }
+
     }
 </style>
 <div class="music-container" onclick="playMusic('Gloria & Lordzeck love story.mp3')">
     <audio id="audio-player" controls></audio>
     <div id="current-music-name">Tap here to listen</div>
 </div>
+ 
 
 <script>
     function playMusic(filename) {
@@ -33,7 +68,7 @@
         audioPlayer.src = filename;
 
         // Update the current music name
-        currentMusicName.textContent = "No music playing: " + filename;
+        currentMusicName.textContent = "Now playing: " + filename;
 
         // Play the audio
         audioPlayer.play();
