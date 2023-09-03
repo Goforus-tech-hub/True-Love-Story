@@ -17,7 +17,6 @@
         text-align: center;
         margin: 0 auto;
         width: 80%; /* Adjust the width as needed */
-          .music-container {
         cursor: pointer; /* Add cursor pointer */
         position: relative; /* Create a stacking context for the signal element */
     }
@@ -50,14 +49,12 @@
             opacity: 0.7;
         }
     }
-
-    }
 </style>
+
 <div class="music-container" onclick="playMusic('Gloria & Lordzeck love story.mp3')">
     <audio id="audio-player" controls></audio>
     <div id="current-music-name">Tap here to listen</div>
 </div>
- 
 
 <script>
     function playMusic(filename) {
@@ -74,7 +71,6 @@
         audioPlayer.play();
     }
 </script>
-
 
     <!-- Privacy Policy -->
     <section class="privacy-section">
