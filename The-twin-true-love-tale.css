@@ -117,6 +117,7 @@ iframe {
   overflow: hidden;
   justify-content: space-between;
   animation: sliding-images 18s infinite linear;
+    border-radius: 26px;
 }
 
 .sliding-images img {
