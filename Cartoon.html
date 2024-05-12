@@ -13,60 +13,6 @@
     <header>
         <h1 style="color: #fff;">Chapter 1: The Beginning</h1>
     </header>
-<style>
-    .music-container {
-        text-align: center;
-        margin: 0 auto;
-        width: 80%; /* Adjust the width as needed */
-        cursor: pointer; /* Add cursor pointer */
-        position: relative; /* Create a stacking context for the button */
-    }
-
-    .play-button {
-        background-color: maroon; /* Button background color */
-        color: #fff; /* Button text color */
-        padding: 5px 10px; /* Reduce button padding */
-        border-radius: 5px; /* Button border radius */
-        font-size: 14px; /* Reduce button font size */
-        display: flex; /* Make button content flex */
-        justify-content: center; /* Center content horizontally */
-        align-items: center; /* Center content vertically */
-    }
-
-    .play-button i {
-        margin-right: 5px; /* Add spacing between the play icon and text */
-        font-size: 12px; /* Reduce icon size */
-    }
-
-    .music-container:hover .play-button {
-        background-color: #0056b3; /* Change button color on hover */
-    }
-</style>
-
-<div class="music-container" onclick="playMusic('Gloria & Lordzeck love story.mp3')">
-    <audio id="audio-player" controls></audio>
-    <div class="play-button">
-        <i class="fas fa-play"></i> Tap to listen
-    </div>
-</div>
-
-<script>
-    function playMusic(filename) {
-        var audioPlayer = document.getElementById("audio-player");
-        var currentMusicName = document.querySelector(".play-button");
-
-        // Set the audio source to the provided filename
-        audioPlayer.src = filename;
-
-        // Update the current music name
-        currentMusicName.innerHTML = '<i class="fas fa-pause"></i> Now playing: ' + filename;
-
-        // Play the audio
-        audioPlayer.play();
-    }
-</script>
-
-
 <!-- Terms and Conditions -->
 <section class="terms-section">
     <h2>Chapter 2: The Continue</h2>
