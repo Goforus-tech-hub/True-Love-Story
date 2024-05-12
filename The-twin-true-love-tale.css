@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
@@ -8,7 +8,7 @@ body {
 header {
   background-color: maroon;
   color: white;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-align: center;
   padding: 5px;
 }
@@ -200,7 +200,7 @@ margin-left: 10px;
 
 
 .love-story-content p {
-font-family: 'Times New Roman', Times, serif;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 font-style: initial;
 font-size: larger;
 
@@ -208,7 +208,7 @@ margin-left: 10px;
 }
 
 .love-song-lyrics {
-font-family: 'Times New Roman', Times, serif;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 font-style: initial;
 font-size: larger;
 margin-left: 10px;
